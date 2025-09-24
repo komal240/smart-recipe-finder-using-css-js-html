@@ -1,26 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Smart Recipe Finder</title>
-  <link rel="stylesheet" main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <main class="container">
-    <h1>🍳 Smart Recipe Finder</h1>
+    <h1>Smart Recipe Finder</h1>
     <p class="tagline">Enter the ingredients available at your home and get recipe ideas!</p>
 
-    <!-- Input area -->
     <section class="input-area">
       <label for="ingredients">Your Ingredients:</label>
       <textarea id="ingredients" placeholder="e.g. rice, tomato, onion, paneer"></textarea>
       <button id="findBtn">Find Recipes</button>
     </section>
 
-    <!-- Results area -->
-    <section class="results" id="results">
-      <p class="muted">Recipes will appear here...</p>
+    <section class="results">
+      <div class="result-container" id="results">
+        <p class="muted">Recipes will appear here...</p>
+      </div>
     </section>
+  </main>
   <script src="./main.js"></script>
-  </body>
-  </html>
+</body>
+</html>
