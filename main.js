@@ -10,7 +10,7 @@ document.getElementById("findBtn").addEventListener("click", async () => {
   resultsDiv.innerHTML = "<p class='muted'>Searching...</p>";
 
   try {
-    const res = await fetch("http://127.0.0.1:5000/generate", {
+    const res = await fetch("https://smart-recipe-finder-using-ai-6.onrender.com/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ingredients: ing })
