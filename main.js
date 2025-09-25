@@ -13,7 +13,7 @@ document.getElementById("findBtn").addEventListener("click", async () => {
     const res = await fetch("https://smart-recipe-finder-using-ai-6.onrender.com/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ingredients: ing })
+      body: JSON.stringify({ "ingredients": ing })
     });
 
     const data = await res.json();
